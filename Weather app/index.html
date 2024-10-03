@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Weather app </title>
+     <link rel="stylesheet" href="./img/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+     <div class="container">
+          <div class="search-box">
+               <i class="fa-solid fa-location-dot"></i> 
+               <input type="text" placeholder="enter your location">
+               <button class="fa-solid fa-magnifying-glass"></button>
+         
+          </div>
+          <div class="weather-box">
+               <div class="box">
+                    <div class="info-weather">
+                         <div class="weather">
+                              <img src="./img/cloud.jfif" alt="cloud">
+                              <p class="temperature">0 <span>°C</span></p>
+                              <p class="weather-title">Broken clouds </p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="weather-detaile">
+               <div class="humidity">
+                    <i class="fa-solid fa-water"></i>
+                    <div class="text">
+                         <div class="info-humidity">
+                              <span>0%</span>
+                         </div>
+                         <p>Humidity</p>
+                    </div>
+               </div>
+               <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                         <div class="info-wind">
+                              <span>0 km/h</span>
+                         </div>
+                         <p>wind speed</p>
+                    </div>
+               </div>
+          </div>
+          <div class="not-found">
+               <div class="box">
+                    <img src="./img/not.jfif" alt="">
+                    <p>Ooops! location not found</p>
+               </div>
+          </div>
+     </div>
+     <script src="./img/script.js"></script>
+</body>
+</html>
