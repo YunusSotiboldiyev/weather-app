@@ -16,6 +16,8 @@ function getWeatherData() {
             if (!response.ok) {
                 console.error(`API Error: ${response.status}`);
                 error404.classList.add('active');
+                weatherDetail.classList.remove('active');
+                weatherBox.classList.remove('active');
                 return Promise.reject('Failed to fetch weather data');
             }
             return response.json();
@@ -24,14 +26,12 @@ function getWeatherData() {
             console.log(json);
             if (json.cod === "404") {
                 container.style.height = '400px';
-                weatherBox.classList.remove('active');
-                weatherDetail.classList.remove('active');
                 error404.classList.add('active');
                 return;
             }
-
-            container.style.height = '555px';
+            
             weatherBox.classList.add('active');
+            container.style.height = '555px';
             weatherDetail.classList.add('active');
             error404.classList.remove('active');
 
